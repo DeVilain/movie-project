@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Movie_Final_Project/static/css/main.d8b23e7b.chunk.css",
-    "main.js": "/Movie_Final_Project/static/js/main.280e5480.chunk.js",
-    "main.js.map": "/Movie_Final_Project/static/js/main.280e5480.chunk.js.map",
-    "runtime-main.js": "/Movie_Final_Project/static/js/runtime-main.3f32e901.js",
-    "runtime-main.js.map": "/Movie_Final_Project/static/js/runtime-main.3f32e901.js.map",
-    "static/js/2.fb76e61e.chunk.js": "/Movie_Final_Project/static/js/2.fb76e61e.chunk.js",
-    "static/js/2.fb76e61e.chunk.js.map": "/Movie_Final_Project/static/js/2.fb76e61e.chunk.js.map",
-    "index.html": "/Movie_Final_Project/index.html",
-    "precache-manifest.160ec0fc60e1fc340495dc713aba50e8.js": "/Movie_Final_Project/precache-manifest.160ec0fc60e1fc340495dc713aba50e8.js",
-    "service-worker.js": "/Movie_Final_Project/service-worker.js",
-    "static/css/main.d8b23e7b.chunk.css.map": "/Movie_Final_Project/static/css/main.d8b23e7b.chunk.css.map",
-    "static/js/2.fb76e61e.chunk.js.LICENSE.txt": "/Movie_Final_Project/static/js/2.fb76e61e.chunk.js.LICENSE.txt",
-    "static/media/svg-1.svg": "/Movie_Final_Project/static/media/svg-1.794fec86.svg",
-    "static/media/svg-2.svg": "/Movie_Final_Project/static/media/svg-2.f48e5867.svg",
-    "static/media/svg-3.svg": "/Movie_Final_Project/static/media/svg-3.3895a74e.svg",
-    "static/media/video2.mp4": "/Movie_Final_Project/static/media/video2.d1e95708.mp4"
+    "main.css": "/movie-project/static/css/main.d8b23e7b.chunk.css",
+    "main.js": "/movie-project/static/js/main.586c6807.chunk.js",
+    "main.js.map": "/movie-project/static/js/main.586c6807.chunk.js.map",
+    "runtime-main.js": "/movie-project/static/js/runtime-main.1a54dc12.js",
+    "runtime-main.js.map": "/movie-project/static/js/runtime-main.1a54dc12.js.map",
+    "static/js/2.448cd844.chunk.js": "/movie-project/static/js/2.448cd844.chunk.js",
+    "static/js/2.448cd844.chunk.js.map": "/movie-project/static/js/2.448cd844.chunk.js.map",
+    "index.html": "/movie-project/index.html",
+    "precache-manifest.545db52b101099febc67fc8ac40b9908.js": "/movie-project/precache-manifest.545db52b101099febc67fc8ac40b9908.js",
+    "service-worker.js": "/movie-project/service-worker.js",
+    "static/css/main.d8b23e7b.chunk.css.map": "/movie-project/static/css/main.d8b23e7b.chunk.css.map",
+    "static/js/2.448cd844.chunk.js.LICENSE.txt": "/movie-project/static/js/2.448cd844.chunk.js.LICENSE.txt",
+    "static/media/svg-1.svg": "/movie-project/static/media/svg-1.794fec86.svg",
+    "static/media/svg-2.svg": "/movie-project/static/media/svg-2.f48e5867.svg",
+    "static/media/svg-3.svg": "/movie-project/static/media/svg-3.3895a74e.svg",
+    "static/media/video2.mp4": "/movie-project/static/media/video2.d1e95708.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.3f32e901.js",
-    "static/js/2.fb76e61e.chunk.js",
+    "static/js/runtime-main.1a54dc12.js",
+    "static/js/2.448cd844.chunk.js",
     "static/css/main.d8b23e7b.chunk.css",
-    "static/js/main.280e5480.chunk.js"
+    "static/js/main.586c6807.chunk.js"
   ]
 }
