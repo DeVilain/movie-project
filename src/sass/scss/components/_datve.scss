@@ -1,0 +1,42 @@
+@import '../helpers/mixin';
+.ghe {
+    @include buttonHomePage(16px, #010606, #01bf71, 10px, 10px);
+    margin: 0;
+    height: 40px;
+    width: 70px;
+    @media screen and (max-width: 820px) {
+        @include buttonHomePage(14px, #010606, #01bf71, 0px, 0px);
+        width: 40px;
+        height: 40px;
+    }
+    @media screen and (max-width: 520px) {
+        @include buttonHomePage(12px, #010606, #01bf71, 0px, 0px);
+        width: 30px;
+        height: 30px;
+    }
+    @media screen and (max-width: 520px) {
+        @include buttonHomePage(12px, #010606, #01bf71, 0px, 0px);
+        width: 25px;
+        height: 25px;
+    }
+    @media screen and (max-width: 400px) {
+        @include buttonHomePage(10px, #010606, #01bf71, 0px, 0px);
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.gheDaDat {
+    background-color: red !important;
+    cursor: no-drop !important;
+}
+
+.gheVip {
+    background-color: rgb(231, 97, 2);
+    color: #fff;
+}
+
+.gheDangDat {
+    background-color: rgb(8, 187, 8);
+    color: #fff;
+}

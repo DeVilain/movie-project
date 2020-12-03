@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
+
+// import router-dom
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+// import css
+import './sass/css/style.css';
 import './App.css';
 
+// import pages
+import TrangChu from './pages/TrangChu/TrangChu';
+import Signin from './pages/Sign-in/Signin';
+import ChiTietPhim from './pages/ChiTietPhim/ChiTietPhim';
+import SignupPage from './pages/Sign-up/SignupPage';
+import DatVe from './components/DatVe/DatVe';
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return ( 
+        <Fragment>
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={TrangChu}></Route>
+                    <Route exact path="/signin" component={Signin}></Route>
+                    <Route exact path="/signup" component={SignupPage}></Route>
+                    <Route exact path="/chitietphim/:maPhim" component={ChiTietPhim}></Route>
+                    <Route exact path="/datve/:maLichChieu" component={DatVe}></Route>
+                </Switch>
+            </Router>
+        </Fragment>
+    );
 }
 
 export default App;

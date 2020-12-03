@@ -1,0 +1,18 @@
+@import './components/navbar';
+@import './components/sidebar';
+@import './components/hero-section';
+@import './components/Icon-content';
+@import './components/movies-section';
+@import './components/theaters-section';
+@import './components/footer';
+@import './components/movie-detail';
+@import './components/signin';
+@import './components/signup';
+@import './components/datve';
+.blank-section {
+    background: #010606;
+    height: 300px;
+    @media screen and (max-width: 768px) {
+        height: 100px;
+    }
+}

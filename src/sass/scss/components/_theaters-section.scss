@@ -1,0 +1,151 @@
+.cinema {
+    background: #010606;
+    padding-top: 70px;
+    &__block {
+        &__left {
+            overflow-y: scroll;
+            height: 700px;
+        }
+        &__left:hover::-webkit-scrollbar {
+            width: 3px;
+            background-color: lightgrey;
+        }
+         ::-webkit-scrollbar {
+            width: 0;
+            background-color: lightgrey;
+        }
+         ::-webkit-scrollbar-thumb {
+            background-color: #01bf71;
+            border-radius: 5px;
+        }
+    }
+    &__detail {
+        background-color: #fff;
+        display: flex;
+        &__logo {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+        img {
+            width: 50px;
+        }
+        &__info {
+            display: flex;
+            width: 100%;
+            height: 90px;
+            border: 1px solid #ddd;
+            border-left: none;
+            padding: 15px;
+            padding-left: 20px;
+            h5 {
+                font-size: 14px;
+                color: #000;
+            }
+            span {
+                color: #fb4226;
+            }
+            p {
+                font-size: 12px;
+                color: #9b9b9b;
+                margin: 0;
+            }
+            a {
+                font-size: 12px;
+                color: #fb4226;
+                text-decoration: none;
+            }
+        }
+        &__info:hover {
+            opacity: 0.5;
+        }
+    }
+    &__showtime {
+        background: #fff;
+        padding: 20px 15px 17px 20px;
+        border: 1px solid #ddd;
+        height: 700px;
+        overflow-y: scroll;
+        hr {
+            border-top: 1px solid #ddd;
+        }
+        &__title {
+            display: flex;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            &__content {
+                padding: 6px 0 0 20px;
+                span {
+                    background-color: #108f3e;
+                    color: #ffffff;
+                    padding: 0px 10px;
+                    border-radius: 4px;
+                }
+                h5 {
+                    font-size: 14px;
+                    color: #000;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 12px;
+                    color: #9b9b9b;
+                    font-weight: 600;
+                }
+            }
+        }
+        &__slot {
+            opacity: 0.5;
+            &__title {
+                font-size: 16px;
+                color: #000;
+                font-weight: 600;
+            }
+            button {
+                background-color: rgba(246, 246, 246, .5);
+                border-radius: 7px;
+                border: 1px solid #e4e4e4;
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #9b9b9b;
+                font-size: 14px;
+            }
+            span {
+                font-size: 16px;
+                color: #108f3e;
+                font-weight: 600;
+            }
+        }
+        &__slot:hover {
+            opacity: 1;
+        }
+    }
+    &__showtime:hover::-webkit-scrollbar {
+        width: 3px;
+        background-color: lightgrey;
+    }
+    @media screen and (max-width:992px) {
+        &__detail {
+            &__logo {
+                height: 150px;
+            }
+            &__info {
+                height: 150px;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        &__detail {
+            &__logo {
+                height: 100px;
+            }
+            &__info {
+                height: 100px;
+            }
+        }
+    }
+}
