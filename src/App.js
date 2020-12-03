@@ -18,7 +18,7 @@ import DatVe from './components/DatVe/DatVe';
 function App() {
     return ( 
         <Fragment>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path="/" component={TrangChu}></Route>
                     <Route exact path="/signin" component={Signin}></Route>

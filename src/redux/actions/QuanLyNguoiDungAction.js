@@ -9,8 +9,8 @@ export const dangNhapAction = ({ taiKhoan, matKhau }) => {
             method: 'POST',
             data: { taiKhoan, matKhau }
         }).then(result => {
-            console.log(result.data)
-                //Lưu thông tin đăng nhập vào local storage
+            //console.log(result.data)
+            //Lưu thông tin đăng nhập vào local storage
             localStorage.setItem(userLogin, JSON.stringify(result.data));
             //Lưu thông tin token vào localStorage
             localStorage.setItem(accessToken, result.data.accessToken);
@@ -31,7 +31,7 @@ export const dangKyAction = ({ taiKhoan, matKhau, email, soDt, maNhom, maLoaiNgu
             method: 'POST',
             data: { taiKhoan, matKhau, email, soDt, maNhom, maLoaiNguoiDung, hoTen }
         }).then(result => {
-            console.log(result.data);
+            //console.log(result.data);
             // lưu thông tin đăng ký vào localStorage
             localStorage.setItem(userSignup, JSON.stringify(result.data));
             //

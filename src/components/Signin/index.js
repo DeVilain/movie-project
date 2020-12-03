@@ -30,7 +30,7 @@ const SignIn = ({ props }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(dangNhapAction(state));
-        maLichChieu ? props.history.push(`/datve/${maLichChieu}`) : props.history.push(`/`);
+        maLichChieu !== '' ? props.history.push(`/datve/${maLichChieu}`) : props.history.push(`/`);
     }
 
     return (

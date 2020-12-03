@@ -58,7 +58,7 @@ const DatVe = (props) => {
                 'Authorization': `Bearer ${usLogin.accessToken}` // cú pháp bắt buộc
             }
         }).then(res => {
-            console.log(res.data);
+            //console.log(res.data);
         }).catch(err => {
             console.log(err.response.data);
         })

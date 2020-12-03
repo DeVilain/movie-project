@@ -11,7 +11,7 @@ const MovieDetail = ({ maPhim }) => {
     if (localStorage.getItem(userLogin)) {
         user = JSON.parse(localStorage.getItem(userLogin));
     }
-    console.log(user);
+    //console.log(user);
     // lưu trữ và thay đổi state thongTinPhim
     let [thongTinPhim, setThongTinPhim] = useState({});
 
@@ -19,7 +19,7 @@ const MovieDetail = ({ maPhim }) => {
     // lấy thông tin chi tiết phim
     const getThongTinPhim = useCallback(() => {
         qlPhimService.layChiTietPhim(maPhim).then(res => {
-            console.log(res.data);
+            //console.log(res.data);
             setThongTinPhim(res.data);
         }).catch(err => {
             console.log(err.response.data);

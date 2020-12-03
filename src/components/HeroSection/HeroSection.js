@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
+import video from './video2.mp4'
 
 const HeroSection = () => {
 
@@ -13,7 +14,7 @@ const HeroSection = () => {
     return (
         <div className="hero-container">
             <div className="hero-bg">
-                <video autoPlay loop muted src="/videos/video2.mp4" type='video/mp4'></video>
+                <video autoPlay loop muted src={video} type='video/mp4'></video>
                 {/* <VideoBg autoPlay loop muted src="/videos/video1.mp4" type='video/mp4'></VideoBg> */}
             </div>
             <div className="hero-content">

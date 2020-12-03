@@ -4,13 +4,17 @@ import { FaBars } from 'react-icons/fa'
 import { GrLogout } from 'react-icons/gr'
 import { animateScroll as scroll } from 'react-scroll'
 import { Link as LinkScroll } from 'react-scroll'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { userLogin } from '../../config/settings'
 
 const Navbar = ({ toggle }) => {
     //
     const [scrollNav, setScrollNav] = useState(false);
     const propNguoidung = useSelector(state => state.QuanLyNguoiDungReducer.nguoiDung);
+    const maLichChieu = useSelector(state => state.IdReducer.maLichChieu);
+    
+    let dispatch = useDispatch();
+
 
     const changeBackgroundNav = () => {
         if (window.scrollY >= 80) {
@@ -40,6 +44,10 @@ const Navbar = ({ toggle }) => {
             <NavLink to="/profile" className="nav-link-username">Xin chào {user.taiKhoan}</NavLink>
             <button onClick={()=>{
                 user = localStorage.removeItem(userLogin);
+                dispatch({
+                    type: 'RESET',
+                    payload: maLichChieu
+                })
             }}><GrLogout></GrLogout></button>
         </>
     }
