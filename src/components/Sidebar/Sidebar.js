@@ -4,6 +4,7 @@ import { Link as LinkRoute } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
 import { GrLogout } from 'react-icons/gr'
 import { userLogin } from '../../config/settings'
+import { useDispatch, useSelector } from 'react-redux';
 
 const Sidebar = ({ isOpen, toggle }) => {
     let user = {};
@@ -11,11 +12,19 @@ const Sidebar = ({ isOpen, toggle }) => {
         user = JSON.parse(localStorage.getItem(userLogin));
     }
 
+    const maLichChieu = useSelector(state => state.IdReducer.maLichChieu);
+
+    let dispatch = useDispatch();
+
     const renderSignOutBtn = () => {
         return <>
             <LinkRoute to="/profile" className="side-link-username">Xin chào {user.taiKhoan}</LinkRoute>
             <button onClick={() => {
                 user = localStorage.removeItem(userLogin);
+                dispatch({
+                    type: 'RESET',
+                    payload: maLichChieu
+                })
             }}><GrLogout></GrLogout></button>
         </>
     }
