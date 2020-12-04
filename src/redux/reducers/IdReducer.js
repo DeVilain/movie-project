@@ -8,8 +8,8 @@ export default (state = ma, action) => {
             state.maLichChieu = action.payload;
             return state;
         case 'RESET':
-            state.maLichChieu = ''
-                //console.log('malichieu', state.maLichChieu);
+            state.maLichChieu = '';
+            //console.log('malichieu', state.maLichChieu);
             return state;
         default:
             return state

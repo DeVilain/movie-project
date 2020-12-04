@@ -130,7 +130,6 @@ ul {
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: 0;
   top: -100%; }
 
 .sidebar-container-opened {
@@ -144,7 +143,6 @@ ul {
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: 100%;
   top: 0; }
 
 .icon {
@@ -523,7 +521,7 @@ button {
   .slide[data-active] .slideContentInner {
     opacity: 1; }
   .slide[data-active] .slideContent {
-    --x: calc(var(--px) - 0.2);
+    --x: calc(var(--px) - 0.3);
     --y: calc(var(--py) - 0.5);
     opacity: 1;
     transform: perspective(1000px); }

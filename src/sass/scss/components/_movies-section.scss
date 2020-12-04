@@ -129,7 +129,7 @@
             opacity: 1;
         }
         .slideContent {
-            --x: calc(var(--px) - 0.2);
+            --x: calc(var(--px) - 0.3);
             --y: calc(var(--py) - 0.5);
             opacity: 1;
             transform: perspective(1000px);

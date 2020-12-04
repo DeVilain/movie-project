@@ -2,8 +2,8 @@ import React from 'react'
 import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRoute } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
-import {GrLogout} from 'react-icons/gr'
-import {userLogin} from '../../config/settings'
+import { GrLogout } from 'react-icons/gr'
+import { userLogin } from '../../config/settings'
 
 const Sidebar = ({ isOpen, toggle }) => {
     let user = {};
@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen, toggle }) => {
     const renderSignOutBtn = () => {
         return <>
             <LinkRoute to="/profile" className="side-link-username">Xin chào {user.taiKhoan}</LinkRoute>
-            <button onClick={()=>{
+            <button onClick={() => {
                 user = localStorage.removeItem(userLogin);
             }}><GrLogout></GrLogout></button>
         </>
