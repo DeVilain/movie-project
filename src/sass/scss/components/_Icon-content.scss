@@ -13,10 +13,10 @@
             justify-content: space-around;
             height: 250px;
             @media screen and (max-width: 768px) {
-                height: 200px;
+                height: 180px;
             }
             @media screen and (max-width: 420px) {
-                height: 150px;
+                height: 130px;
             }
             img {
                 @media screen and (max-width: 586px) {

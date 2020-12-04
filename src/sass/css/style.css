@@ -12,6 +12,9 @@
   @media screen and (max-width: 960px) {
     .nav-default {
       transition: 0.8s all ease; } }
+  @media screen and (max-width: 480px) {
+    .nav-default {
+      height: 70px; } }
 
 .nav-scroll {
   background-color: transparent;
@@ -37,13 +40,18 @@
   padding: 0 24px;
   max-width: 1100px;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .navbar-container {
+      height: 70px; } }
   .navbar-container img {
     /*display: flex;
         justify-self: flex-start;*/
     cursor: pointer;
-    height: 50px; }
+    height: 40px; }
   .navbar-container .nav-icon {
     display: none; }
+    .navbar-container .nav-icon svg {
+      vertical-align: top !important; }
     @media screen and (max-width: 768px) {
       .navbar-container .nav-icon {
         display: block;
@@ -245,16 +253,13 @@ button {
     z-index: 2; }
   @media screen and (max-width: 992px) {
     .hero-container {
-      height: 700px; } }
+      height: 650px; } }
   @media screen and (max-width: 768px) {
     .hero-container {
       height: 600px; } }
   @media screen and (max-width: 586px) {
     .hero-container {
-      height: 500px; } }
-  @media screen and (max-width: 420px) {
-    .hero-container {
-      height: 400px; } }
+      height: 550px; } }
 
 .hero-bg {
   position: absolute;
@@ -290,7 +295,7 @@ button {
         font-size: 40px; } }
     @media screen and (max-width: 480px) {
       .hero-content h1 {
-        font-size: 32px; } }
+        font-size: 30px; } }
   .hero-content p {
     margin-top: 24px;
     color: #fff;
@@ -348,9 +353,9 @@ button {
           border-radius: 50px;
           background: #01bf71;
           white-space: nowrap;
-          padding: 12px 30px;
+          padding: 10px 15px;
           color: #010606;
-          font-size: 15px;
+          font-size: 14px;
           outline: none;
           border: none;
           cursor: pointer;
@@ -379,10 +384,10 @@ button {
     height: 250px; }
     @media screen and (max-width: 768px) {
       .icon-container .icon-wrapper ul {
-        height: 200px; } }
+        height: 180px; } }
     @media screen and (max-width: 420px) {
       .icon-container .icon-wrapper ul {
-        height: 150px; } }
+        height: 130px; } }
     @media screen and (max-width: 586px) {
       .icon-container .icon-wrapper ul img {
         height: 70px; } }
@@ -399,7 +404,19 @@ button {
   position: relative;
   overflow: hidden;
   display: grid;
-  height: 50vw; }
+  height: 700px; }
+  @media screen and (max-width: 992px) {
+    .slides {
+      height: 600px; } }
+  @media screen and (max-width: 768px) {
+    .slides {
+      height: 500px; } }
+  @media screen and (max-width: 586px) {
+    .slides {
+      height: 400px; } }
+  @media screen and (max-width: 420px) {
+    .slides {
+      height: 350px; } }
   .slides .slide {
     grid-area: 1 / 2;
     display: flex;
@@ -426,9 +443,12 @@ button {
       left: 0%; }
     .slides button:last-child {
       right: 0%; }
+    @media screen and (max-width: 586px) {
+      .slides button {
+        top: 20%; } }
 
 .slideContent {
-  width: 30vw;
+  width: 25em;
   height: 70%;
   background-size: cover;
   background-position: center center;
@@ -492,11 +512,31 @@ button {
       cursor: pointer;
       transition: all 0.2s ease-in-out;
       text-decoration: none;
-      margin-top: 10px; }
+      margin-top: 10px;
+      font-weight: bold; }
       .slideContent .slideContentInner .slideLink:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606; }
+      @media screen and (max-width: 786px) {
+        .slideContent .slideContentInner .slideLink {
+          font-size: 14px; } }
+      @media screen and (max-width: 420px) {
+        .slideContent .slideContentInner .slideLink {
+          font-size: 11px;
+          padding: 5px 15px; } }
+  @media screen and (max-width: 992px) {
+    .slideContent {
+      width: 20em; } }
+  @media screen and (max-width: 768px) {
+    .slideContent {
+      width: 17em; } }
+  @media screen and (max-width: 586px) {
+    .slideContent {
+      width: 15em; } }
+  @media screen and (max-width: 420px) {
+    .slideContent {
+      width: 13em; } }
 
 .slideBackground {
   position: absolute;
@@ -546,18 +586,19 @@ button {
     border-radius: 5px; }
   .cinema__detail {
     background-color: #fff;
-    display: flex; }
+    display: flex;
+    height: 90px; }
     .cinema__detail__logo {
       width: 90px;
-      height: 90px;
       border: 1px solid #ddd;
-      padding: 20px; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .cinema__detail img {
       width: 50px; }
     .cinema__detail__info {
       display: flex;
       width: 100%;
-      height: 90px;
       border: 1px solid #ddd;
       border-left: none;
       padding: 15px;
@@ -629,16 +670,22 @@ button {
   .cinema__showtime:hover::-webkit-scrollbar {
     width: 3px;
     background-color: lightgrey; }
-  @media screen and (max-width: 992px) {
-    .cinema__detail__logo {
-      height: 150px; }
-    .cinema__detail__info {
-      height: 150px; } }
   @media screen and (max-width: 768px) {
-    .cinema__detail__logo {
-      height: 100px; }
-    .cinema__detail__info {
-      height: 100px; } }
+    .cinema__detail {
+      height: 70px; }
+      .cinema__detail__logo {
+        width: 70px; }
+      .cinema__detail img {
+        width: 40px; } }
+  @media screen and (max-width: 586px) {
+    .cinema__detail {
+      height: 60px; }
+      .cinema__detail__logo {
+        width: 70px; }
+      .cinema__detail img {
+        width: 40px; }
+      .cinema__detail__info p {
+        display: none; } }
 
 .footer-container {
   background-color: #101522; }
@@ -938,11 +985,18 @@ span {
     .detail__title {
       top: 15%; }
       .detail__title__center__info span {
-        font-size: 16px; }
+        font-size: 18px; }
       .detail__title__center__info p {
         font-size: 12px; }
       .detail__title__center button {
         font-size: 12px; } }
+  @media screen and (max-width: 365px) {
+    .detail__title {
+      top: 10%; }
+      .detail__title__center__info span:first-child {
+        font-size: 13px; }
+      .detail__title__center__info p {
+        margin: 0; } }
 
 .detail__showtime {
   padding: 0 20px; }
@@ -1039,7 +1093,8 @@ span {
           padding: 16px 16px;
           margin-bottom: 32px;
           border: none;
-          border-radius: 4px; }
+          border-radius: 4px;
+          overflow: hidden; }
         .signin-container .form-wrapper .form-content form span {
           text-align: center;
           margin-top: 24px;
@@ -1056,7 +1111,8 @@ span {
           border: none;
           cursor: pointer;
           transition: all 0.2s ease-in-out;
-          text-decoration: none; }
+          text-decoration: none;
+          overflow: hidden; }
           .signin-container .form-wrapper .form-content form button:hover {
             transition: all 0.2s ease-in-out;
             background: #fff;
@@ -1211,9 +1267,7 @@ span {
       border: none;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
-      text-decoration: none;
-      width: 25px;
-      height: 25px; }
+      text-decoration: none; }
       .ghe:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
@@ -1225,14 +1279,12 @@ span {
       white-space: nowrap;
       padding: 0px 0px;
       color: #010606;
-      font-size: 10px;
+      font-size: 12px;
       outline: none;
       border: none;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
-      text-decoration: none;
-      width: 20px;
-      height: 20px; }
+      text-decoration: none; }
       .ghe:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
@@ -1247,14 +1299,18 @@ span {
   color: #fff; }
 
 .gheDangDat {
-  background-color: #08bb08;
-  color: #fff; }
+  background-color: #f6fa00;
+  color: #000000;
+  font-weight: bold; }
 
 .blank-section {
   background: #010606;
-  height: 300px; }
+  height: 200px; }
   @media screen and (max-width: 768px) {
     .blank-section {
       height: 100px; } }
+  @media screen and (max-width: 586px) {
+    .blank-section {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

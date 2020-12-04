@@ -19,16 +19,13 @@
         z-index: 2;
     }
     @media screen and (max-width: 992px) {
-        height: 700px;
+        height: 650px;
     }
     @media screen and (max-width: 768px) {
         height: 600px;
     }
     @media screen and (max-width: 586px) {
-        height: 500px;
-    }
-    @media screen and (max-width: 420px) {
-        height: 400px;
+        height: 550px;
     }
 }
 
@@ -67,7 +64,7 @@
             font-size: 40px;
         }
         @media screen and (max-width: 480px) {
-            font-size: 32px;
+            font-size: 30px;
         }
     }
     p {
@@ -96,7 +93,7 @@
                 @include buttonHomePage(18px, #010606, #01bf71, 12px, 30px);
             }
             @media screen and (max-width: 420px) {
-                @include buttonHomePage(15px, #010606, #01bf71, 12px, 30px);
+                @include buttonHomePage(14px, #010606, #01bf71, 10px, 15px);
             }
         }
     }

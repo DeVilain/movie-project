@@ -16,13 +16,9 @@
     }
     @media screen and (max-width: 520px) {
         @include buttonHomePage(12px, #010606, #01bf71, 0px, 0px);
-        width: 25px;
-        height: 25px;
     }
     @media screen and (max-width: 400px) {
-        @include buttonHomePage(10px, #010606, #01bf71, 0px, 0px);
-        width: 20px;
-        height: 20px;
+        @include buttonHomePage(12px, #010606, #01bf71, 0px, 0px);
     }
 }
 
@@ -37,6 +33,7 @@
 }
 
 .gheDangDat {
-    background-color: rgb(8, 187, 8);
-    color: #fff;
+    background-color: rgb(246, 250, 0);
+    color: #000000;
+    font-weight: bold;
 }

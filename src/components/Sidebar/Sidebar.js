@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <ul>
                         <LinkScroll className="sidebar-link-scroll" to="phim" onClick={toggle}>Phim</LinkScroll>
                         <LinkScroll className="sidebar-link-scroll" to="rap" onClick={toggle}>Rạp</LinkScroll>
-                        <LinkScroll className="sidebar-link-scroll" to="gioithieu" onClick={toggle}>Giới thiệu</LinkScroll>
+                        <LinkScroll className="sidebar-link-scroll" to="khuyenmai" onClick={toggle}>Khuyến mãi</LinkScroll>
                         <LinkScroll className="sidebar-link-scroll" to="lienhe" onClick={toggle}>Liên hệ</LinkScroll>
                     </ul>
                     <div className="sidebar-btn-wrap">

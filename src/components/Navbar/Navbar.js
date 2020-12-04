@@ -44,6 +44,7 @@ const Navbar = ({ toggle }) => {
             <NavLink to="/profile" className="nav-link-username">Xin chào {user.taiKhoan}</NavLink>
             <button onClick={()=>{
                 user = localStorage.removeItem(userLogin);
+                toggleHome();
                 dispatch({
                     type: 'RESET',
                     payload: maLichChieu

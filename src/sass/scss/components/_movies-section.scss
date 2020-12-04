@@ -9,7 +9,19 @@
         position: relative;
         overflow: hidden;
         display: grid;
-        height: 50vw;
+        height: 700px;
+        @media screen and (max-width: 992px) {
+            height: 600px;
+        }
+        @media screen and (max-width: 768px) {
+            height: 500px;
+        }
+        @media screen and (max-width: 586px) {
+            height: 400px;
+        }
+        @media screen and (max-width: 420px) {
+            height: 350px;
+        }
         .slide {
             grid-area: 1 / 2;
             display: flex;
@@ -41,11 +53,14 @@
             &:last-child {
                 right: 0%;
             }
+            @media screen and (max-width: 586px) {
+                top: 20%;
+            }
         }
     }
     
     .slideContent {
-        width: 30vw;
+        width: 25em;
         height: 70%;
         background-size: cover;
         background-position: center center;
@@ -99,7 +114,27 @@
             .slideLink {
                 @include buttonHomePage(16px, #010606, #01bf71, 10px, 22px);
                 margin-top: 10px;
+                font-weight: bold;
+                @media screen and (max-width: 786px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 420px) {
+                    font-size: 11px;
+                    padding: 5px 15px;
+                }
             }
+        }
+        @media screen and (max-width: 992px) {
+            width: 20em;
+        }
+        @media screen and (max-width: 768px) {
+            width: 17em;
+        }
+        @media screen and (max-width: 586px) {
+            width: 15em;
+        }
+        @media screen and (max-width: 420px) {
+            width: 13em;
         }
     }
     

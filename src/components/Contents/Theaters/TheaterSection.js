@@ -10,7 +10,7 @@ const TheaterSection = () => {
         <section className="cinema" id="rap">
             <div className="cinema__complex" />
             <div className="container cinema__block">
-                <div className="row">
+                <div className="row px-4">
                     <div className="col-md-5 col-sm-12 px-0 cinema__block__left">
                         <div className="cinema__detail">
                             <div className="cinema__detail__logo">
@@ -25,7 +25,7 @@ const TheaterSection = () => {
                                         <h5><span> CGV</span> - Sư Vạn Hạnh</h5>
                                         <p>Tầng 6, Vạn Hạnh Mall</p>
                                     </a>
-                                    <a href="/">[chi tiết]</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> BHD Star</span> - Bitexco</h5>
                                     <p>L3, Bitexco Icon</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> GLX</span> - Nguyễn Du</h5>
                                     <p>116 Nguyễn Du, Q.1</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> CNS</span> - Hai Bà Trưng</h5>
                                     <p>135 Hai Bà Trưng, Q.1</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> DDC</span> - Đống Đa</h5>
                                     <p>890 Trần Hưng Đạo, Q.5</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> Lotte</span> - Cantavil</h5>
                                     <p>L7, Cantavil Premier</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span>MegaGS</span> - Cao Thắng</h5>
                                     <p>19 Cao Thắng</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> CGV</span> - Sư Vạn Hạnh</h5>
                                     <p>Tầng 6, Vạn Hạnh Mall</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> BHD Star</span> - Bitexco</h5>
                                     <p>L3, Bitexco Icon</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> GLX</span> - Nguyễn Du</h5>
                                     <p>116 Nguyễn Du, Q.1</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ const TheaterSection = () => {
                                 </a><div className="ml-3"><a href="/">
                                     <h5><span> CNS</span> - Hai Bà Trưng</h5>
                                     <p>135 Hai Bà Trưng, Q.1</p>
-                                </a><a href="/">[chi tiết]</a>
+                                </a>
                                 </div>
                             </div>
                         </div>

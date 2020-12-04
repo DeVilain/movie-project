@@ -11,8 +11,11 @@
 @import './components/datve';
 .blank-section {
     background: #010606;
-    height: 300px;
+    height: 200px;
     @media screen and (max-width: 768px) {
         height: 100px;
+    }
+    @media screen and (max-width: 586px) {
+        display: none;
     }
 }
